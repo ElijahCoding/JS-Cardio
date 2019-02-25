@@ -80,6 +80,18 @@ function capitalizeLetters(str) {
     // return strArr.join(' ')
 
     // Option 2
+    // return str.toLowerCase()
+    //           .split(' ')
+    //           .map(word => {
+    //               return word[0].toUpperCase() + word.substring(1)
+    //           })
+    //           .join(' ')
+
+
+    // Option 3 Regex
+    // return str.replace(/\b[a-z]/gi, char => {
+    //     return char.toUpperCase()
+    // })
 }
 
 
