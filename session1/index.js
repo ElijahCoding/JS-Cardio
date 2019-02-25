@@ -36,7 +36,9 @@ function reverseString(str) {
     // return revString
 
     // Option 6
-    
+    return str.split('').reduce((revString, char) => {
+        return char + revString
+    }, '')
 }
 
 
