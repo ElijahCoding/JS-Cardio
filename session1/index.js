@@ -8,15 +8,35 @@ function reverseString(str) {
     // return str.split('').reverse().join('');
 
     // Option 2
-    let revString = ''
-    for (let i = str.length - 1; i >= 0; i--) {
-        revString += str[i]
-    }
-    return revString
+    // let revString = ''
+    // for (let i = str.length - 1; i >= 0; i--) {
+    //     revString += str[i]
+    // }
+    // return revString
 
     // Option 3
+    // let revString = ''
+    // for (let i = 0; i <= str.length - 1; i++) {
+    //     revString = str[i] + revString
+    // }
+    // return revString
 
+    // Option 4
+    // let revString = ''
+    // for (let char of str) {
+    //     revString = char + revString
+    // }
+    // return revString
 
+    // Option 5
+    // let revString = ''
+    // str.split('').forEach(char => {
+    //     revString = char + revString
+    // })
+    // return revString
+
+    // Option 6
+    
 }
 
 
