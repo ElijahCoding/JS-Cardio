@@ -3,8 +3,20 @@
 // ex. reverseString('hello') === 'olleh'
 
 function reverseString(str) {
-    const strArr = str.split('')
-    return strArr.reverse().join('')
+
+    // Option 1
+    // return str.split('').reverse().join('');
+
+    // Option 2
+    let revString = ''
+    for (let i = str.length - 1; i >= 0; i--) {
+        revString += str[i]
+    }
+    return revString
+
+    // Option 3
+
+
 }
 
 
