@@ -3,7 +3,8 @@
 // ex. reverseString('hello') === 'olleh'
 
 function reverseString(str) {
-  return 'Let\'s Start'
+    const strArr = str.split('')
+    return strArr.reverse().join('')
 }
 
 
