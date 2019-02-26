@@ -58,9 +58,16 @@ function chunkArray(arr, len) {
 // ex. [[1, 2], [3, 4], [5, 6], [7]] = [1, 2, 3, 4, 5, 6, 7]
 
 function flattenArray(arrays) {
-    return arrays.reduce((a, b) => {
-        return a.concat(b)
-    })
+    // Option 1
+    // return arrays.reduce((a, b) => {
+    //     return a.concat(b)
+    // })
+
+    // Option 2
+    // return [].concat.apply([], arrays)
+
+    // Option 3
+    // return [].concat(...arrays)
 }
 
 // CHALLENGE 4: ANAGRAM
@@ -68,7 +75,13 @@ function flattenArray(arrays) {
 // ex. 'elbow' === 'below'
 // ex. 'Dormitory' === 'dirty room##'
 
-function isAnagram(str1, str2) {}
+function isAnagram(str1, str2) {
+
+}
+
+function formatString() {
+    
+}
 
 // CHALLENGE 5: LETTER CHANGES
 // Change every letter of the string to the one that follows it and capitalize the vowels
@@ -78,6 +91,6 @@ function isAnagram(str1, str2) {}
 function letterChanges(str) {}
 
 // Call Function
-const output = flattenArray([[1, 2], [3, 4], [5, 6], [7]]);
+const output = isAnagram('elbow', 'below');
 
 console.log(output);
