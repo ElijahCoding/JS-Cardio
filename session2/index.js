@@ -28,17 +28,29 @@ function longestWord(sen) {
 
 function chunkArray(arr, len) {
     // Option 1
-    const chunkedArr = []
-    let i = 0
-    while (i < arr.length) {
-        chunkedArr.push(arr.slice(i, i + len))
-
-        i += len
-    }
-    return chunkedArr
+    // const chunkedArr = []
+    // let i = 0
+    // while (i < arr.length) {
+    //     chunkedArr.push(arr.slice(i, i + len))
+    //
+    //     i += len
+    // }
+    // return chunkedArr
 
     // Option 2
-    
+    const chunkedArr = []
+
+    arr.forEach(val => {
+        const last = chunkedArr[chunkedArr.length - 1];
+
+        if (!last || last.length === len) {
+            chunkedArr.push([val]);
+        } else {
+            last.push(val);
+        }
+    })
+
+    return chunkedArr;
 }
 
 // CHALLENGE 3: FLATTEN ARRAY
