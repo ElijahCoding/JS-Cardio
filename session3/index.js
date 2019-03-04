@@ -2,7 +2,28 @@
 // Return a sum of all parameters entered regardless of the amount of numbers - NO ARRAYS
 // ex. addAll(2,5,6,7) === 20
 
-function addAll() {}
+// Option 1
+// function addAll() {
+//     var args = Array.prototype.slice.call(arguments)
+//     var total = 0
+//
+//     for (var i = 0; i < args.length; i++) {
+//         total += args[i]
+//     }
+//     return total
+// }
+
+// Option 2
+// function addAll(...numbers) {
+//     let total = 0
+//     numbers.forEach(num => total += num)
+//     return total
+// }
+
+// Option 3
+function addAll(...numbers) {
+    return numbers.reduce((acc, cur) => acc + cur)
+}
 
 // CHALLENGE 2: SUM ALL PRIMES
 // Pass in a number to loop up to and add all of the prime numbers. A prime number is a whole number greater than 1 whose only factors are 1 and itself
